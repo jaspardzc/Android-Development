@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="anim_list_bottom">
+        <item name="android:windowEnterAnimation">@anim/list_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/list_bottom_out</item>
+    </style>
+
+</resources>

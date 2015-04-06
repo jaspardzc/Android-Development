@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidGourmetGuider</string>
+    <string name="groupName">Team Name: AGG</string>
+    <string name="developer">Developer: Can_Zeng  Yang_Song\n</string>
+    <string name="contact">\t\t\t\t\t\t\t\t\tContact:\njaspardzc@email.arizona.edu\n\tfionays@email.arizona.edu</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_image_process">ImageProcessActivity</string>
+    <string name="title_activity_location_map">LocationMapActivity</string>
+    <string name="title_default_string">Successfully Built</string>
+    <string name="searchable_label">This is label</string>
+    <string name="searchable_hint">This is hint</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_map">MapActivity</string>
+
+    <string-array name="place_type" >
+        <item>bus_station</item>
+        <item>restaurant</item>
+        <item>bank</item>
+        <item>atm</item>
+    </string-array>
+
+    <string-array name="place_type_name" >
+        <item>Bus Station</item>
+        <item>Restaurant</item>
+        <item>Bank</item>
+        <item>ATM</item>
+    </string-array>
+
+
+
+</resources>

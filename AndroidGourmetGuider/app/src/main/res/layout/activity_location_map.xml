@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mypersonalapp.androidgourmetguider.LocationMapActivity"
+    android:id="@+id/location_layout"
+    android:background="@drawable/blur4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/sub_locationLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/edit_searchMessage"
+            android:text="message here.."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_search_default"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_locationLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="5dp">
+    <TextView
+        android:id="@+id/text_searchList"
+        android:hint="Search List will be displayed in list view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sub_locationLayout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_storeSearchHistory"
+            android:text="Sync History"
+            android:textSize="20sp"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_recent_history"/>
+        <Button
+            android:id="@+id/button_mapService"
+            android:text="Map Service"
+            android:textSize="20sp"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_dialog_map"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_returnMain"
+        android:text="Return Home Page"
+        android:textSize="20sp"
+        android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@android:drawable/ic_media_previous"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

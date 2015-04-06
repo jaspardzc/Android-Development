@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mypersonalapp.androidgourmetguider.ImageProcessActivity"
+    android:orientation="vertical"
+    android:id="@+id/imageProcess_layout"
+    android:background="@drawable/blur3"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:id="@+id/sub_imageLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="5dp">
+
+    <Button
+        android:id="@+id/button_imageSync"
+        android:text="Synchronize Image"
+        android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@android:drawable/ic_popup_sync"
+        android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_imageLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_blur"
+            android:text="Blur"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"/>
+
+        <Button
+            android:id="@+id/button_brighter"
+            android:text="Bright"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:textSize="20sp"
+            android:layout_weight="0.25"/>
+        <Button
+            android:id="@+id/button_sharpen"
+            android:text="Sharp"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"/>
+        <Button
+            android:id="@+id/button_crop"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:textSize="20sp"
+            android:text="Crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_imageLayout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_imageIdentify"
+            android:text="Image Identifying"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/button_imageCombine"
+            android:text="Image Combining"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_manage"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_imageLayout_4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_result"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+        <com.mypersonalapp.androidgourmetguider.CropView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/cropView"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_imageLayout_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:text="Confirm"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_save"
+            android:layout_weight="0.33"/>
+        <Button
+            android:id="@+id/button_Error"
+            android:text="Error"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_weight="0.33"/>
+        <EditText
+            android:id="@+id/edit_keywords"
+            android:hint="Keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_imageLayout_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_imageSearch"
+            android:text="Move to Searching Panel"
+            android:textSize="20sp"
+            android:textAllCaps="@bool/abc_action_bar_embed_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_media_next"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>
