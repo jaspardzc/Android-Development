@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidJunitTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="assignment_text">CAN ZENG\nECE573 hw01</string>
+    <string name="netID">jaspardzc</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainlayout"
+    android:orientation="vertical"
+    android:background="@drawable/theimage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assignment_text"
+        android:textColor="#ff0000"
+        android:maxLines="12"
+        android:textSize="@dimen/front_size"
+        android:visibility="invisible"
+        android:id="@+id/the_assignment_text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
